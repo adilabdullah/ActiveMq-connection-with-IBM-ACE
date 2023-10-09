@@ -3,11 +3,11 @@
 CREATE COMPUTE MODULE ActiveMqFlow_Compute
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
-		-- Written by Adil
+		-- Written by Adil Abdullah
 		-- CALL CopyMessageHeaders();
 		-- CALL CopyEntireMessage();
 		SET OutputRoot.BLOB.BLOB=CAST(InputRoot.JSON.Data.ID AS BLOB CCSID 1208 ENCODING 546);
-	-- Written by Adil
+	-- Written by Adil Abdullah
 		RETURN TRUE;
 	END;
 
